@@ -37,7 +37,7 @@ def yolov5Mask(ai_model, inputImg, outputImg, resultImg, showResult = True):
 
 def mrcnnMask(inputImg, outputImg):
   # Root directory of the project
-  ROOT_DIR = os.path.abspath("/content/Mask_RCNN") #절대경로 구하기
+  ROOT_DIR = os.path.abspath("/content/PPP/Mask_RCNN") #절대경로 구하기
 
   # Import Mask RCNN
   sys.path.append(ROOT_DIR)  # To find local version of the library 파이썬 모듈경로 불러오기
