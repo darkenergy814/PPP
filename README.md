@@ -12,6 +12,7 @@ There are two versions. One is with yolov5 and LaMa Inpainting, and the other is
 </a>
 
 ## <div align="center">Requirements</div>
+We changed a few codes of yolov5 and Mask RCNN for Running both models(yolov5+LaMa or mask RCNN+Lama).
 ### <div>Yolov5+LaMa Version</div>
 python 3.10  torch 2.0.0  cu118  etc
 ### <div>Mask RCNN+LaMa Version</div>
