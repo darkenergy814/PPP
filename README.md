@@ -17,7 +17,23 @@ There are two versions. One is with yolov5 and LaMa Inpainting, and the other is
     - Git clone PPP  
     - Install packages for yolov5 and LaMa Inpainting
     - Install an LaMa model file
+    ```
+    PPP
+    │ lama   
+    │  └── big-lama   
+    │      ├── config.yaml # model configs  
+    │      └── models           
+    │          └── best.ckpt # model weights     
+    ```  
     - Make an directory for LaMa Inpainting prediction
+    ```
+    PPP
+    │ lama
+    │  └── data_for_prediction
+    │      ├── sample1.png # example
+    │      └── sample1_mask.png # example
+    ```  
+
 2. Use code block named "Change file path and start object detection and Inpainting" for object detection, mask generating, and mask inpainting.
     - By using maskGenerator.yolov5Mask, you could make an mask(black and white) with yolov5.
     - Make an Inpainted Image from the mask made by the maskGenerator.yolov5Mask.
@@ -29,7 +45,22 @@ There are two versions. One is with yolov5 and LaMa Inpainting, and the other is
     - Git clone PPP
     - Install packages for mask rcnn and LaMa Inpainting
     - Install LaMa model file
+    ```
+    .root
+    │ lama   
+    │  └── big-lama   
+    │      ├── config.yaml # model configs     
+    │      └── models           
+    │          └── best.ckpt # model weights    
+    ```
     - Make an directory for LaMa Inpainting prediction.
+    ```
+    PPP
+    │ lama
+    │  └── data_for_prediction
+    │      ├── sample8.png # example
+    │      └── sample8_mask.png # example
+    ```
 3. Use code block named "Change file path and start Inpainting" for object detection, mask generating, and mask inpainting.
     - By using maskGenerator.mrcnnMask, you could make an mask(black and white) with mask RCNN.
     - After making mask, reset gpu ram for LaMa Inpainting
